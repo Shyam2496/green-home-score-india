@@ -1,0 +1,9 @@
+{
+  "data_kind": "synthetic",
+  "source": "greenhome.ml.generate_dataset + greenhome.physics",
+  "license": "Generated synthetic data; no separate owner licence declared",
+  "units": "kWh/year",
+  "geographic_scope": "Hyderabad-first synthetic Indian homes",
+  "label_rule_version": "synthetic_india_physics_v2",
+  "measured_household_count": 0
+}

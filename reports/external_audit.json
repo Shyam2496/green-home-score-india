@@ -1,0 +1,30 @@
+{
+  "summary": "11 public RESIDE-AC Hyderabad homes, using only five mapped household inputs and fixed defaults: electricity MAE 2,350 kWh/year. Missing annual usage, solar and fabric details, and an unknown bill year prevent a full-feature accuracy claim.",
+  "metrics": {
+    "scope": "Frozen partial-feature sanity check, not full-feature accuracy validation",
+    "n_homes": 11,
+    "mae_kwh": 2349.9296496693464,
+    "rmse_kwh": 2606.6504505201456,
+    "mean_bias_kwh": 2349.9296496693464,
+    "r2_partial_feature_check": -19.925272545655034,
+    "mean_observed_grid_kwh": 2573.2727272727275,
+    "mean_predicted_grid_kwh": 4923.202376942074,
+    "empirical_synthetic_interval_coverage": 0.0
+  },
+  "model_metadata_sha256": "6faaa0fd846a6dc0dd1d05e5093bd104b24834ab77e7609cb2552f429559ef84",
+  "external_csv_sha256": "65115b436148b9b0e0273136391b640e82bf40aef88e965e1a94978d14269437",
+  "source_doi": "https://doi.org/10.6084/m9.figshare.16869439.v3",
+  "paper_doi": "https://doi.org/10.1186/s42162-022-00225-4",
+  "license": "CC0 1.0",
+  "used_for_training_selection_calibration_or_tuning": false,
+  "input_policy": "Only area, occupants, property type, city and AC count mapped. All other values fixed from documented defaults. No tuning against the observed labels.",
+  "limitations": [
+    "11 homes from one city are too few and too narrow for national validation.",
+    "Labels are annual electricity bill imports; solar presence and gross demand are unknown.",
+    "Bill observation year is unknown; physics uses 2024 grid weather.",
+    "Primary AC May2019 runtime and star rating are not annual all-AC usage/ISEER.",
+    "No measured LPG or PNG labels; neither fuel is externally evaluated.",
+    "Synthetic conformal intervals have no guaranteed real-house coverage.",
+    "Paper/timestamps indicate May2019; repository description says May2021."
+  ]
+}

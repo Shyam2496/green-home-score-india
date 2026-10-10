@@ -1,0 +1,15 @@
+{
+  "electricity_kg_co2_per_kwh": 0.716,
+  "lpg_kg_co2_per_kwh": 0.22716,
+  "png_kg_co2_per_kwh": 0.20196,
+  "source_year": "CEA FY 2022-23; IPCC 2006",
+  "basis": "Operational CO2 only; generation national proxy; LPG and PNG net CV; excludes T&D, WTT and embodied emissions",
+  "electricity_source": "https://cea.nic.in/wp-content/uploads/baseline/2024/01/User_Guide__Version_19.0.pdf",
+  "electricity_source_detail": "CEA CO2 Baseline Database v19, Annexure I: 0.716 tCO2/MWh, including renewables/captive; dated proxy, not latest",
+  "lpg_source": "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_2_Ch2_Stationary_Combustion.pdf",
+  "lpg_source_detail": "IPCC 2006 Vol 2 Ch 2 Table 2.5: 63,100 kg CO2/TJ (net CV), multiplied by 0.0000036 TJ/kWh",
+  "lpg_ncv_source": "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_1_Ch1_Introduction.pdf",
+  "lpg_ncv_source_detail": "IPCC 2006 Vol 2 Ch 1 Table 1.2: 47.3 TJ/Gg = 47.3 MJ/kg; 1 kWh = 3.6 MJ",
+  "png_source": "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_2_Ch2_Stationary_Combustion.pdf",
+  "png_source_detail": "IPCC 2006 Vol 2 Ch 2 Table 2.5: natural gas 56,100 kg CO2/TJ, net CV, multiplied by 0.0000036 TJ/kWh; delivered PNG composition can differ"
+}

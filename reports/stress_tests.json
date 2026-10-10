@@ -1,0 +1,81 @@
+{
+  "interpretation": "Sensitivity and drift diagnostics only. Counterfactual truth is assumed physics, not measured climate or retrofit outcomes.",
+  "cases": {
+    "high_ac_hours_and_low_setpoint": {
+      "annual_electricity_demand_kwh": {
+        "n": 400,
+        "mae_kwh": 0.0,
+        "rmse_kwh": 0.0,
+        "r2": 1.0,
+        "wape": 0.0
+      },
+      "annual_lpg_kwh": {
+        "n": 400,
+        "mae_kwh": 0.0,
+        "rmse_kwh": 0.0,
+        "r2": 1.0,
+        "wape": 0.0
+      },
+      "annual_png_kwh": {
+        "n": 400,
+        "mae_kwh": 0.0,
+        "rmse_kwh": 0.0,
+        "r2": 1.0,
+        "wape": 0.0
+      }
+    },
+    "weaker_envelope": {
+      "annual_electricity_demand_kwh": {
+        "n": 400,
+        "mae_kwh": 0.0,
+        "rmse_kwh": 0.0,
+        "r2": 1.0,
+        "wape": 0.0
+      },
+      "annual_lpg_kwh": {
+        "n": 400,
+        "mae_kwh": 0.0,
+        "rmse_kwh": 0.0,
+        "r2": 1.0,
+        "wape": 0.0
+      },
+      "annual_png_kwh": {
+        "n": 400,
+        "mae_kwh": 0.0,
+        "rmse_kwh": 0.0,
+        "r2": 1.0,
+        "wape": 0.0
+      }
+    },
+    "unobserved_35_percent_usage_shift": {
+      "annual_electricity_demand_kwh": {
+        "n": 400,
+        "mae_kwh": 1383.5855202476428,
+        "rmse_kwh": 1622.1006900098855,
+        "r2": 0.33547700092376764,
+        "wape": 0.2615948205894907,
+        "active_coverage_under_unobserved_35_percent_shift": 0.19
+      },
+      "annual_lpg_kwh": {
+        "n": 400,
+        "mae_kwh": 367.6603023863638,
+        "rmse_kwh": 523.7199895096846,
+        "r2": 0.7506992147047453,
+        "wape": 0.2787565537849135,
+        "active_coverage_under_unobserved_35_percent_shift": 0.29152542372881357
+      },
+      "annual_png_kwh": {
+        "n": 400,
+        "mae_kwh": 60.64233750000001,
+        "rmse_kwh": 225.59710001952044,
+        "r2": 0.9034851866971615,
+        "wape": 0.2487789573605652,
+        "active_coverage_under_unobserved_35_percent_shift": 0.4528301886792453
+      }
+    }
+  },
+  "ood_rejection_examples": {
+    "area_m2_300": "Rejected by supported input bounds.",
+    "unknown_city": "Rejected until weather/schema are documented."
+  }
+}

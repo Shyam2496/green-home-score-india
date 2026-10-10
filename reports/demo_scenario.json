@@ -1,0 +1,5194 @@
+{
+  "baseline": {
+    "annual_grid_kwh": 5052.429705264273,
+    "annual_solar_generation_kwh": 0.0,
+    "annual_solar_self_consumed_kwh": 0.0,
+    "annual_solar_export_kwh": 0.0,
+    "annual_electricity_demand_kwh": 5052.429705264273,
+    "annual_lpg_kwh": 1036.3636363636363,
+    "annual_png_kwh": 0.0,
+    "annual_gas_kwh": 1036.3636363636363
+  },
+  "after": {
+    "annual_grid_kwh": 851.8549997965756,
+    "annual_solar_generation_kwh": 4513.799999999999,
+    "annual_solar_self_consumed_kwh": 2555.5649993897264,
+    "annual_solar_export_kwh": 1958.235000610273,
+    "annual_electricity_demand_kwh": 3407.419999186302,
+    "annual_lpg_kwh": 0.0,
+    "annual_png_kwh": 0.0,
+    "annual_gas_kwh": 0.0
+  },
+  "baseline_score": {
+    "score": 28.98165294182708,
+    "classification": "Very poor",
+    "components": [
+      {
+        "name": "Appliance efficiency",
+        "weight": 0.25,
+        "subscore": 30.5,
+        "contribution": 7.625
+      },
+      {
+        "name": "Electricity demand intensity",
+        "weight": 0.2,
+        "subscore": 85.9082647091354,
+        "contribution": 17.18165294182708
+      },
+      {
+        "name": "Insulation",
+        "weight": 0.15,
+        "subscore": 0.0,
+        "contribution": 0.0
+      },
+      {
+        "name": "Cooling and hot water",
+        "weight": 0.15,
+        "subscore": 24.5,
+        "contribution": 3.675
+      },
+      {
+        "name": "Windows and glazing",
+        "weight": 0.1,
+        "subscore": 5.0,
+        "contribution": 0.5
+      },
+      {
+        "name": "Renewable energy",
+        "weight": 0.1,
+        "subscore": 0.0,
+        "contribution": 0.0
+      },
+      {
+        "name": "Smart energy management",
+        "weight": 0.05,
+        "subscore": 0,
+        "contribution": 0.0
+      }
+    ],
+    "flags": [
+      "Score uses disclosed engineering defaults for advanced inputs; this illustrative score is not a BEE or ENS certification."
+    ],
+    "energy_intensity_kwh_m2": 53.18347058172919,
+    "electricity_demand_intensity_kwh_m2": 53.18347058172919,
+    "purchased_energy_intensity_kwh_m2": 64.0925614908201,
+    "missing_components": []
+  },
+  "after_score": {
+    "score": 83.81324210611969,
+    "classification": "Highly efficient",
+    "components": [
+      {
+        "name": "Appliance efficiency",
+        "weight": 0.25,
+        "subscore": 80.5,
+        "contribution": 20.125
+      },
+      {
+        "name": "Electricity demand intensity",
+        "weight": 0.2,
+        "subscore": 94.56621053059843,
+        "contribution": 18.913242106119686
+      },
+      {
+        "name": "Insulation",
+        "weight": 0.15,
+        "subscore": 60.0,
+        "contribution": 9.0
+      },
+      {
+        "name": "Cooling and hot water",
+        "weight": 0.15,
+        "subscore": 78.5,
+        "contribution": 11.775
+      },
+      {
+        "name": "Windows and glazing",
+        "weight": 0.1,
+        "subscore": 90.0,
+        "contribution": 9.0
+      },
+      {
+        "name": "Renewable energy",
+        "weight": 0.1,
+        "subscore": 100.0,
+        "contribution": 10.0
+      },
+      {
+        "name": "Smart energy management",
+        "weight": 0.05,
+        "subscore": 100,
+        "contribution": 5.0
+      }
+    ],
+    "flags": [],
+    "energy_intensity_kwh_m2": 35.86757893880318,
+    "electricity_demand_intensity_kwh_m2": 35.86757893880318,
+    "purchased_energy_intensity_kwh_m2": 8.966894734700796,
+    "missing_components": []
+  },
+  "savings": {
+    "electricity_kwh": 4200.574705467698,
+    "lpg_kwh": 1036.3636363636363,
+    "png_kwh": 0.0,
+    "gas_kwh": 1036.3636363636363,
+    "total_kwh": 5236.938341831334,
+    "percent": 86.00946111978203,
+    "carbon_kg": 3243.031852751235
+  },
+  "recommendations": [
+    {
+      "id": "insulation",
+      "name": "Roof insulation",
+      "suitability": "High",
+      "reason": "Reduce exposed-roof U-value to at most 0.6 W/m2K before AC upgrades; wall properties stay as entered. Assumes roof/moisture/fire-safety survey. Fan-only comfort benefits are not credited as electricity savings.",
+      "stage": 1,
+      "selected": true,
+      "standalone_savings": {
+        "electricity_kwh": 855.2790233549995,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 855.2790233549995,
+        "percent": 14.046773726209778,
+        "carbon_kg": 612.3797807221796
+      },
+      "sequential_savings": {
+        "electricity_kwh": 855.2790233549995,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 855.2790233549995,
+        "percent": 14.046773726209778,
+        "carbon_kg": 612.3797807221796
+      },
+      "recommended_sequential_savings": {
+        "electricity_kwh": 855.2790233549995,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 855.2790233549995,
+        "percent": 14.046773726209778,
+        "carbon_kg": 612.3797807221796
+      },
+      "standalone_trace": {
+        "status": "available",
+        "retrofit_id": "insulation",
+        "comparison": "standalone",
+        "physical_input_changes": {
+          "insulation": {
+            "before": "poor",
+            "after": "good"
+          },
+          "roof_u_value": {
+            "before": 3.0,
+            "after": 0.6
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.5259744081935201,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 0.5259744081935201,
+            "after_kwh": 949.0096862389033
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 4197.150681909274,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4197.150681909274,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 855.2790233549995,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 855.2790233549995,
+          "percent": 14.046773726209778,
+          "carbon_kg": 612.3797807221796
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 612.3797807221796,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "selected_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "insulation",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "insulation": {
+            "before": "poor",
+            "after": "good"
+          },
+          "roof_u_value": {
+            "before": 3.0,
+            "after": 0.6
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.5259744081935201,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 0.5259744081935201,
+            "after_kwh": 949.0096862389033
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 4197.150681909274,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4197.150681909274,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 855.2790233549995,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 855.2790233549995,
+          "percent": 14.046773726209778,
+          "carbon_kg": 612.3797807221796
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 612.3797807221796,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "recommended_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "insulation",
+        "comparison": "recommended_package_marginal",
+        "physical_input_changes": {
+          "insulation": {
+            "before": "poor",
+            "after": "good"
+          },
+          "roof_u_value": {
+            "before": 3.0,
+            "after": 0.6
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.5259744081935201,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 0.5259744081935201,
+            "after_kwh": 949.0096862389033
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 4197.150681909274,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4197.150681909274,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 855.2790233549995,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 855.2790233549995,
+          "percent": 14.046773726209778,
+          "carbon_kg": 612.3797807221796
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 612.3797807221796,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      }
+    },
+    {
+      "id": "glazing",
+      "name": "Double glazing",
+      "suitability": "Medium",
+      "reason": "Reduce cooling heat gain where single glazing exists; ventilation, shading and a site survey remain necessary.",
+      "stage": 2,
+      "selected": true,
+      "standalone_savings": {
+        "electricity_kwh": 248.58828204339898,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 248.58828204339898,
+        "percent": 4.082718333431497,
+        "carbon_kg": 177.98920994307366
+      },
+      "sequential_savings": {
+        "electricity_kwh": 248.58828204339898,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 248.58828204339898,
+        "percent": 4.749930293979487,
+        "carbon_kg": 177.98920994307366
+      },
+      "recommended_sequential_savings": {
+        "electricity_kwh": 248.58828204339898,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 248.58828204339898,
+        "percent": 4.749930293979487,
+        "carbon_kg": 177.98920994307366
+      },
+      "standalone_trace": {
+        "status": "available",
+        "retrofit_id": "glazing",
+        "comparison": "standalone",
+        "physical_input_changes": {
+          "glazing": {
+            "before": "single",
+            "after": "double"
+          },
+          "window_shgc": {
+            "before": 0.75,
+            "after": 0.4
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 1555.7004275505042,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 1555.7004275505042,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.8622236670209229,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 0.8622236670209229,
+            "after_kwh": 1555.7004275505042
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 4803.841423220874,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4803.841423220874,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 248.58828204339898,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 248.58828204339898,
+          "percent": 4.082718333431497,
+          "carbon_kg": 177.98920994307366
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 177.98920994307366,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "selected_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "glazing",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "glazing": {
+            "before": "single",
+            "after": "double"
+          },
+          "window_shgc": {
+            "before": 0.75,
+            "after": 0.4
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.7380550634539894,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 949.0096862389033,
+            "ratio": 0.7380550634539894,
+            "after_kwh": 700.4214041955044
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 4197.150681909274,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4197.150681909274,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3948.562399865875,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3948.562399865875,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 248.58828204339898,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 248.58828204339898,
+          "percent": 4.749930293979487,
+          "carbon_kg": 177.98920994307366
+        },
+        "savings_percent_denominator_kwh": 5233.51431827291,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 177.98920994307366,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "recommended_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "glazing",
+        "comparison": "recommended_package_marginal",
+        "physical_input_changes": {
+          "glazing": {
+            "before": "single",
+            "after": "double"
+          },
+          "window_shgc": {
+            "before": 0.75,
+            "after": 0.4
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.7380550634539894,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 949.0096862389033,
+            "ratio": 0.7380550634539894,
+            "after_kwh": 700.4214041955044
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 4197.150681909274,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4197.150681909274,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3948.562399865875,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3948.562399865875,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 248.58828204339898,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 248.58828204339898,
+          "percent": 4.749930293979487,
+          "carbon_kg": 177.98920994307366
+        },
+        "savings_percent_denominator_kwh": 5233.51431827291,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 177.98920994307366,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      }
+    },
+    {
+      "id": "led_lighting",
+      "name": "Complete LED lighting",
+      "suitability": "High",
+      "reason": "Replace remaining non-LED lamps at unchanged light output and operating hours.",
+      "stage": 3,
+      "selected": true,
+      "standalone_savings": {
+        "electricity_kwh": 486.77999999999975,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 486.77999999999975,
+        "percent": 7.994687496978727,
+        "carbon_kg": 348.5344799999998
+      },
+      "sequential_savings": {
+        "electricity_kwh": 486.7800000000002,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 486.7800000000002,
+        "percent": 9.765039570540749,
+        "carbon_kg": 348.53448000000014
+      },
+      "recommended_sequential_savings": {
+        "electricity_kwh": 486.7800000000002,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 486.7800000000002,
+        "percent": 9.765039570540749,
+        "carbon_kg": 348.53448000000014
+      },
+      "standalone_trace": {
+        "status": "available",
+        "retrofit_id": "led_lighting",
+        "comparison": "standalone",
+        "physical_input_changes": {
+          "led_fraction": {
+            "before": 0.5,
+            "after": 1.0
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 0.4615384615384616,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 1.0,
+            "after_kwh": 1804.2887095939031
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 0.4615384615384616,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 4565.6497052642735,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4565.6497052642735,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 486.77999999999975,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 486.77999999999975,
+          "percent": 7.994687496978727,
+          "carbon_kg": 348.5344799999998
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 348.5344799999998,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "selected_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "led_lighting",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "led_fraction": {
+            "before": 0.5,
+            "after": 1.0
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 0.4615384615384616,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 700.4214041955044,
+            "ratio": 1.0,
+            "after_kwh": 700.4214041955044
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 0.4615384615384616,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3948.562399865875,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3948.562399865875,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3461.7823998658746,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3461.7823998658746,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 486.7800000000002,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 486.7800000000002,
+          "percent": 9.765039570540749,
+          "carbon_kg": 348.53448000000014
+        },
+        "savings_percent_denominator_kwh": 4984.926036229511,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 348.53448000000014,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "recommended_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "led_lighting",
+        "comparison": "recommended_package_marginal",
+        "physical_input_changes": {
+          "led_fraction": {
+            "before": 0.5,
+            "after": 1.0
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 0.4615384615384616,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 700.4214041955044,
+            "ratio": 1.0,
+            "after_kwh": 700.4214041955044
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 0.4615384615384616,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3948.562399865875,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3948.562399865875,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3461.7823998658746,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3461.7823998658746,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 486.7800000000002,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 486.7800000000002,
+          "percent": 9.765039570540749,
+          "carbon_kg": 348.53448000000014
+        },
+        "savings_percent_denominator_kwh": 4984.926036229511,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 348.53448000000014,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      }
+    },
+    {
+      "id": "efficient_ac",
+      "name": "Efficient inverter AC",
+      "suitability": "High",
+      "reason": "Improve actual AC ISEER to at least 5.2 after fabric changes; capacity, comfort setting and operating hours stay fixed. Verify the model's current BEE label and suitable sizing.",
+      "stage": 4,
+      "selected": true,
+      "standalone_savings": {
+        "electricity_kwh": 693.9571959976547,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 693.9571959976547,
+        "percent": 11.397286080530977,
+        "carbon_kg": 496.87335233432077
+      },
+      "sequential_savings": {
+        "electricity_kwh": 269.3928477675013,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 269.3928477675013,
+        "percent": 5.988975137706177,
+        "carbon_kg": 192.8852790015309
+      },
+      "recommended_sequential_savings": {
+        "electricity_kwh": 269.3928477675013,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 269.3928477675013,
+        "percent": 5.988975137706177,
+        "carbon_kg": 192.8852790015309
+      },
+      "standalone_trace": {
+        "status": "available",
+        "retrofit_id": "efficient_ac",
+        "comparison": "standalone",
+        "physical_input_changes": {
+          "cooling": {
+            "before": "ac_standard",
+            "after": "ac_efficient"
+          },
+          "ac_iseer": {
+            "before": 3.2,
+            "after": 5.2
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 1110.331513596248,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 1110.331513596248,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.6153846153846153,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 0.6153846153846153,
+            "after_kwh": 1110.331513596248
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 4358.4725092666185,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4358.4725092666185,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 693.9571959976547,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 693.9571959976547,
+          "percent": 11.397286080530977,
+          "carbon_kg": 496.87335233432077
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 496.87335233432077,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "selected_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "efficient_ac",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "cooling": {
+            "before": "ac_standard",
+            "after": "ac_efficient"
+          },
+          "ac_iseer": {
+            "before": 3.2,
+            "after": 5.2
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.6153846153846155,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 700.4214041955044,
+            "ratio": 0.6153846153846155,
+            "after_kwh": 431.0285564280028
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3461.7823998658746,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3461.7823998658746,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3192.3895520983733,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3192.3895520983733,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 269.3928477675013,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 269.3928477675013,
+          "percent": 5.988975137706177,
+          "carbon_kg": 192.8852790015309
+        },
+        "savings_percent_denominator_kwh": 4498.146036229511,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 192.8852790015309,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "recommended_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "efficient_ac",
+        "comparison": "recommended_package_marginal",
+        "physical_input_changes": {
+          "cooling": {
+            "before": "ac_standard",
+            "after": "ac_efficient"
+          },
+          "ac_iseer": {
+            "before": 3.2,
+            "after": 5.2
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.6153846153846155,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 700.4214041955044,
+            "ratio": 0.6153846153846155,
+            "after_kwh": 431.0285564280028
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3461.7823998658746,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3461.7823998658746,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3192.3895520983733,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3192.3895520983733,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 269.3928477675013,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 269.3928477675013,
+          "percent": 5.988975137706177,
+          "carbon_kg": 192.8852790015309
+        },
+        "savings_percent_denominator_kwh": 4498.146036229511,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 192.8852790015309,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      }
+    },
+    {
+      "id": "smart_controls",
+      "name": "Smart timers and controls",
+      "suitability": "High",
+      "reason": "Timers and temperature schedules reduce unnecessary AC use without assumed comfort changes. This model assigns no energy saving when no AC is used.",
+      "stage": 5,
+      "selected": true,
+      "standalone_savings": {
+        "electricity_kwh": 144.34309676751218,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 144.34309676751218,
+        "percent": 2.3706355047504433,
+        "carbon_kg": 103.34965728553871
+      },
+      "sequential_savings": {
+        "electricity_kwh": 34.48228451424029,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 34.48228451424029,
+        "percent": 0.8154243810758187,
+        "carbon_kg": 24.68931571219605
+      },
+      "recommended_sequential_savings": {
+        "electricity_kwh": 34.48228451424029,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 34.48228451424029,
+        "percent": 0.8154243810758187,
+        "carbon_kg": 24.68931571219605
+      },
+      "standalone_trace": {
+        "status": "available",
+        "retrofit_id": "smart_controls",
+        "comparison": "standalone",
+        "physical_input_changes": {
+          "smart_controls": {
+            "before": false,
+            "after": true
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 1659.945612826391,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 1659.945612826391,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.92,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 0.92,
+            "after_kwh": 1659.945612826391
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 4908.086608496761,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4908.086608496761,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 144.34309676751218,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 144.34309676751218,
+          "percent": 2.3706355047504433,
+          "carbon_kg": 103.34965728553871
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 103.34965728553871,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "selected_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "smart_controls",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "smart_controls": {
+            "before": false,
+            "after": true
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.9199999999999998,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 431.0285564280028,
+            "ratio": 0.9199999999999998,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3192.3895520983733,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3192.3895520983733,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3157.907267584133,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3157.907267584133,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 34.48228451424029,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 34.48228451424029,
+          "percent": 0.8154243810758187,
+          "carbon_kg": 24.68931571219605
+        },
+        "savings_percent_denominator_kwh": 4228.753188462009,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 24.68931571219605,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "recommended_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "smart_controls",
+        "comparison": "recommended_package_marginal",
+        "physical_input_changes": {
+          "smart_controls": {
+            "before": false,
+            "after": true
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.9199999999999998,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 431.0285564280028,
+            "ratio": 0.9199999999999998,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3192.3895520983733,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3192.3895520983733,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3157.907267584133,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3157.907267584133,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 34.48228451424029,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 34.48228451424029,
+          "percent": 0.8154243810758187,
+          "carbon_kg": 24.68931571219605
+        },
+        "savings_percent_denominator_kwh": 4228.753188462009,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 24.68931571219605,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      }
+    },
+    {
+      "id": "solar_water_heater",
+      "name": "Solar water heating",
+      "suitability": "Medium",
+      "reason": "Replace part of electric hot-water demand with solar heat; assumes 70% annual solar share and space/plumbing suitability. Backup remains electric.",
+      "stage": 6,
+      "selected": true,
+      "standalone_savings": {
+        "electricity_kwh": 429.0586969692595,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 429.0586969692595,
+        "percent": 7.0466950164964155,
+        "carbon_kg": 307.20602702998974
+      },
+      "sequential_savings": {
+        "electricity_kwh": 429.0586969692595,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 429.0586969692595,
+        "percent": 10.229637207396808,
+        "carbon_kg": 307.20602702998974
+      },
+      "recommended_sequential_savings": {
+        "electricity_kwh": 429.0586969692595,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 429.0586969692595,
+        "percent": 10.229637207396808,
+        "carbon_kg": 307.20602702998974
+      },
+      "standalone_trace": {
+        "status": "available",
+        "retrofit_id": "solar_water_heater",
+        "comparison": "standalone",
+        "physical_input_changes": {
+          "hot_water": {
+            "before": "electric_geyser",
+            "after": "solar_heater"
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 183.88229870111113,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 183.8822987011111,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 0.3,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 1.0,
+            "after_kwh": 1804.2887095939031
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 0.3,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 4623.371008295014,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4623.371008295014,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 429.0586969692595,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 429.0586969692595,
+          "percent": 7.0466950164964155,
+          "carbon_kg": 307.20602702998974
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 307.20602702998974,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "selected_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "solar_water_heater",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "hot_water": {
+            "before": "electric_geyser",
+            "after": "solar_heater"
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 0.3,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 396.5462719137625,
+            "ratio": 1.0,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 0.3,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3157.907267584133,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3157.907267584133,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 2728.8485706148736,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 2728.8485706148736,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 429.0586969692595,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 429.0586969692595,
+          "percent": 10.229637207396808,
+          "carbon_kg": 307.20602702998974
+        },
+        "savings_percent_denominator_kwh": 4194.2709039477695,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 307.20602702998974,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "recommended_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "solar_water_heater",
+        "comparison": "recommended_package_marginal",
+        "physical_input_changes": {
+          "hot_water": {
+            "before": "electric_geyser",
+            "after": "solar_heater"
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 0.3,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 396.5462719137625,
+            "ratio": 1.0,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 0.3,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3157.907267584133,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3157.907267584133,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 2728.8485706148736,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 2728.8485706148736,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 429.0586969692595,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 429.0586969692595,
+          "percent": 10.229637207396808,
+          "carbon_kg": 307.20602702998974
+        },
+        "savings_percent_denominator_kwh": 4194.2709039477695,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 307.20602702998974,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      }
+    },
+    {
+      "id": "induction",
+      "name": "Induction cooking",
+      "suitability": "Medium",
+      "reason": "Switch the declared LPG or PNG cooking fuel to induction, preserving assumed useful cooking heat; compatible cookware and circuit assessment required. Electricity increases and operational CO2 can increase.",
+      "stage": 7,
+      "selected": true,
+      "standalone_savings": {
+        "electricity_kwh": -678.5714285714284,
+        "lpg_kwh": 1036.3636363636363,
+        "png_kwh": 0.0,
+        "gas_kwh": 1036.3636363636363,
+        "total_kwh": 357.7922077922078,
+        "percent": 5.876241608432517,
+        "carbon_kg": -250.4367792207791
+      },
+      "sequential_savings": {
+        "electricity_kwh": -678.5714285714284,
+        "lpg_kwh": 1036.3636363636363,
+        "png_kwh": 0.0,
+        "gas_kwh": 1036.3636363636363,
+        "total_kwh": 357.7922077922078,
+        "percent": 9.502577494279592,
+        "carbon_kg": -250.4367792207791
+      },
+      "recommended_sequential_savings": {
+        "electricity_kwh": -678.5714285714284,
+        "lpg_kwh": 1036.3636363636363,
+        "png_kwh": 0.0,
+        "gas_kwh": 1036.3636363636363,
+        "total_kwh": 357.7922077922078,
+        "percent": 9.502577494279592,
+        "carbon_kg": -250.4367792207791
+      },
+      "standalone_trace": {
+        "status": "available",
+        "retrofit_id": "induction",
+        "comparison": "standalone",
+        "physical_input_changes": {
+          "cooking_fuel": {
+            "before": "lpg",
+            "after": "induction"
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": {
+          "source_lpg_kwh": 1036.3636363636363,
+          "source_png_kwh": 0.0,
+          "lpg_efficiency": 0.55,
+          "png_efficiency": 0.5,
+          "induction_efficiency": 0.84,
+          "useful_cooking_heat_kwh": 570.0,
+          "added_electricity_kwh": 678.5714285714286,
+          "equation": "added electricity = (entered LPG kWh * 0.55 + entered PNG kWh * 0.50) / 0.84"
+        },
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 1.0,
+            "after_kwh": 1804.2887095939031
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "before + added electricity from anchored fuel conversion",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 678.5714285714286
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 5731.001133835702,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5731.001133835702,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "savings": {
+          "electricity_kwh": -678.5714285714284,
+          "lpg_kwh": 1036.3636363636363,
+          "png_kwh": 0.0,
+          "gas_kwh": 1036.3636363636363,
+          "total_kwh": 357.7922077922078,
+          "percent": 5.876241608432517,
+          "carbon_kg": -250.4367792207791
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": -485.8571428571427,
+          "lpg": 235.42036363636362,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "selected_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "induction",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "cooking_fuel": {
+            "before": "lpg",
+            "after": "induction"
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": {
+          "source_lpg_kwh": 1036.3636363636363,
+          "source_png_kwh": 0.0,
+          "lpg_efficiency": 0.55,
+          "png_efficiency": 0.5,
+          "induction_efficiency": 0.84,
+          "useful_cooking_heat_kwh": 570.0,
+          "added_electricity_kwh": 678.5714285714286,
+          "equation": "added electricity = (entered LPG kWh * 0.55 + entered PNG kWh * 0.50) / 0.84"
+        },
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 396.5462719137625,
+            "ratio": 1.0,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 183.88229870111113,
+            "ratio": 1.0,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "before + added electricity from anchored fuel conversion",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 678.5714285714286
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 2728.8485706148736,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 2728.8485706148736,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3407.419999186302,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3407.419999186302,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "savings": {
+          "electricity_kwh": -678.5714285714284,
+          "lpg_kwh": 1036.3636363636363,
+          "png_kwh": 0.0,
+          "gas_kwh": 1036.3636363636363,
+          "total_kwh": 357.7922077922078,
+          "percent": 9.502577494279592,
+          "carbon_kg": -250.4367792207791
+        },
+        "savings_percent_denominator_kwh": 3765.21220697851,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": -485.8571428571427,
+          "lpg": 235.42036363636362,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "recommended_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "induction",
+        "comparison": "recommended_package_marginal",
+        "physical_input_changes": {
+          "cooking_fuel": {
+            "before": "lpg",
+            "after": "induction"
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": {
+          "source_lpg_kwh": 1036.3636363636363,
+          "source_png_kwh": 0.0,
+          "lpg_efficiency": 0.55,
+          "png_efficiency": 0.5,
+          "induction_efficiency": 0.84,
+          "useful_cooking_heat_kwh": 570.0,
+          "added_electricity_kwh": 678.5714285714286,
+          "equation": "added electricity = (entered LPG kWh * 0.55 + entered PNG kWh * 0.50) / 0.84"
+        },
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 396.5462719137625,
+            "ratio": 1.0,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 183.88229870111113,
+            "ratio": 1.0,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "before + added electricity from anchored fuel conversion",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 678.5714285714286
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 2728.8485706148736,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 2728.8485706148736,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3407.419999186302,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3407.419999186302,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "savings": {
+          "electricity_kwh": -678.5714285714284,
+          "lpg_kwh": 1036.3636363636363,
+          "png_kwh": 0.0,
+          "gas_kwh": 1036.3636363636363,
+          "total_kwh": 357.7922077922078,
+          "percent": 9.502577494279592,
+          "carbon_kg": -250.4367792207791
+        },
+        "savings_percent_denominator_kwh": 3765.21220697851,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": -485.8571428571427,
+          "lpg": 235.42036363636362,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      }
+    },
+    {
+      "id": "solar",
+      "name": "Rooftop solar PV (3 kW)",
+      "suitability": "High",
+      "reason": "Install illustrative 3 kW PV after efficiency changes; preliminary site declarations pass, but a professional structural/shading/electrical survey is still required. Credit only modeled self-use, with no export savings.",
+      "stage": 8,
+      "selected": true,
+      "standalone_savings": {
+        "electricity_kwh": 2933.97,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 2933.97,
+        "percent": 48.18639483033545,
+        "carbon_kg": 2100.72252
+      },
+      "sequential_savings": {
+        "electricity_kwh": 2555.5649993897264,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 2555.5649993897264,
+        "percent": 75.0,
+        "carbon_kg": 1829.784539563044
+      },
+      "recommended_sequential_savings": {
+        "electricity_kwh": 2555.5649993897264,
+        "lpg_kwh": 0.0,
+        "png_kwh": 0.0,
+        "gas_kwh": 0.0,
+        "total_kwh": 2555.5649993897264,
+        "percent": 75.0,
+        "carbon_kg": 1829.784539563044
+      },
+      "standalone_trace": {
+        "status": "available",
+        "retrofit_id": "solar",
+        "comparison": "standalone",
+        "physical_input_changes": {
+          "solar_kw": {
+            "before": 0.0,
+            "after": 3.0
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 1.0,
+            "after_kwh": 1804.2887095939031
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 2118.4597052642735,
+          "annual_solar_generation_kwh": 4513.799999999999,
+          "annual_solar_self_consumed_kwh": 2933.97,
+          "annual_solar_export_kwh": 1579.8299999999995,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 2933.97,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 2933.97,
+          "percent": 48.18639483033545,
+          "carbon_kg": 2100.72252
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 2100.72252,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "selected_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "solar",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "solar_kw": {
+            "before": 0.0,
+            "after": 3.0
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": 1.0,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 396.5462719137625,
+            "ratio": 1.0,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 183.88229870111113,
+            "ratio": 1.0,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 678.5714285714286,
+            "ratio": 1.0,
+            "after_kwh": 678.5714285714286
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3407.419999186302,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3407.419999186302,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "after_energy": {
+          "annual_grid_kwh": 851.8549997965756,
+          "annual_solar_generation_kwh": 4513.799999999999,
+          "annual_solar_self_consumed_kwh": 2555.5649993897264,
+          "annual_solar_export_kwh": 1958.235000610273,
+          "annual_electricity_demand_kwh": 3407.419999186302,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "savings": {
+          "electricity_kwh": 2555.5649993897264,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 2555.5649993897264,
+          "percent": 75.0,
+          "carbon_kg": 1829.784539563044
+        },
+        "savings_percent_denominator_kwh": 3407.419999186302,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 1829.784539563044,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      "recommended_marginal_trace": {
+        "status": "available",
+        "retrofit_id": "solar",
+        "comparison": "recommended_package_marginal",
+        "physical_input_changes": {
+          "solar_kw": {
+            "before": 0.0,
+            "after": 3.0
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": 1.0,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 396.5462719137625,
+            "ratio": 1.0,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 183.88229870111113,
+            "ratio": 1.0,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 678.5714285714286,
+            "ratio": 1.0,
+            "after_kwh": 678.5714285714286
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3407.419999186302,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3407.419999186302,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "after_energy": {
+          "annual_grid_kwh": 851.8549997965756,
+          "annual_solar_generation_kwh": 4513.799999999999,
+          "annual_solar_self_consumed_kwh": 2555.5649993897264,
+          "annual_solar_export_kwh": 1958.235000610273,
+          "annual_electricity_demand_kwh": 3407.419999186302,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "savings": {
+          "electricity_kwh": 2555.5649993897264,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 2555.5649993897264,
+          "percent": 75.0,
+          "carbon_kg": 1829.784539563044
+        },
+        "savings_percent_denominator_kwh": 3407.419999186302,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 1829.784539563044,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      }
+    }
+  ],
+  "rejected": [],
+  "applied": [
+    "insulation",
+    "glazing",
+    "led_lighting",
+    "efficient_ac",
+    "smart_controls",
+    "solar_water_heater",
+    "induction",
+    "solar"
+  ],
+  "home_after": {
+    "area_m2": 95.0,
+    "occupants": 3.0,
+    "solar_kw": 3.0,
+    "ac_units": 2.0,
+    "ac_hours_per_day": 6.0,
+    "led_fraction": 1.0,
+    "insulation": "good",
+    "cooling": "ac_efficient",
+    "glazing": "double",
+    "property_type": "independent",
+    "city": "Hyderabad",
+    "smart_controls": true,
+    "hot_water": "solar_heater",
+    "cooking_fuel": "induction",
+    "roof_access": true,
+    "external_space": true,
+    "electric_connection": true,
+    "heritage_restricted": false,
+    "retrofit_consent": true,
+    "current_value_inr": 7500000.0,
+    "require_site_checks": true,
+    "usable_roof_area_m2": 50.0,
+    "solar_shading_ok": true,
+    "solar_structure_ok": true,
+    "solar_electrical_ok": true,
+    "site_checks_provenance": "fictional_demo_assumptions",
+    "ac_capacity_ton": 1.5,
+    "ac_iseer": 5.2,
+    "setpoint_c": 26.0,
+    "roof_u_value": 0.6,
+    "wall_u_value": 2.2,
+    "roof_exposed_fraction": 1.0,
+    "window_to_wall_ratio": 0.2,
+    "window_shgc": 0.4,
+    "window_shading_fraction": 0.25,
+    "fan_count": 4.0,
+    "fan_power_w": 55.0,
+    "fan_hours_per_day": 6.0,
+    "lighting_hours_per_day": 5.0,
+    "hot_water_litres_per_person_day": 20.0,
+    "appliance_kwh_per_day": 3.41,
+    "solar_self_consumption_fraction": 0.65
+  },
+  "flags": [
+    "Retrofit estimates use assumed end-use allocation and constant comfort/use; site assessment required.",
+    "India adaptation: appliance efficiency and cooling/hot water replace EPC and space-heating components; no certificate is predicted.",
+    "Carbon is operational CO2 only using a dated CEA national generation proxy, not complete lifecycle CO2e.",
+    "Rooftop solar site screening is preliminary and based on user declarations: at least 30 m2 usable roof area for illustrative 3 kW PV plus shading, structural and electrical suitability. Actual module/layout needs vary; this is not installation certification.",
+    "Engineering defaults were assumed for: ac_capacity_ton, ac_iseer, setpoint_c, roof_u_value, roof_exposed_fraction, wall_u_value, window_to_wall_ratio, window_shgc, window_shading_fraction, fan_count, fan_power_w, fan_hours_per_day, lighting_hours_per_day, hot_water_litres_per_person_day, appliance_kwh_per_day, solar_self_consumption_fraction. Inspect advanced inputs before interpreting estimates.",
+    "Gross electricity and PV self-use are separately accounted; exports receive no energy or carbon credit.",
+    "Weather uses NASA POWER single-year 2024 gridded data; PV generation uses the separate PVGIS ERA5 2005-2023 reference. Synthetic training labels remain simulated.",
+    "Hyderabad is the primary pilot. Space heating and humidity/latent cooling are not modeled; other cities are exploratory even though their weather/PV references are sourced.",
+    "Induction is a fuel-switch option: purchased energy may fall while operational CO2 rises; inspect signed per-fuel changes."
+  ],
+  "factors": {
+    "electricity_kg_co2_per_kwh": 0.716,
+    "lpg_kg_co2_per_kwh": 0.22716,
+    "png_kg_co2_per_kwh": 0.20196,
+    "source_year": "CEA FY 2022-23; IPCC 2006",
+    "basis": "Operational CO2 only; generation national proxy; LPG and PNG net CV; excludes T&D, WTT and embodied emissions",
+    "electricity_source": "https://cea.nic.in/wp-content/uploads/baseline/2024/01/User_Guide__Version_19.0.pdf",
+    "electricity_source_detail": "CEA CO2 Baseline Database v19, Annexure I: 0.716 tCO2/MWh, including renewables/captive; dated proxy, not latest",
+    "lpg_source": "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_2_Ch2_Stationary_Combustion.pdf",
+    "lpg_source_detail": "IPCC 2006 Vol 2 Ch 2 Table 2.5: 63,100 kg CO2/TJ (net CV), multiplied by 0.0000036 TJ/kWh",
+    "lpg_ncv_source": "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_1_Ch1_Introduction.pdf",
+    "lpg_ncv_source_detail": "IPCC 2006 Vol 2 Ch 1 Table 1.2: 47.3 TJ/Gg = 47.3 MJ/kg; 1 kWh = 3.6 MJ",
+    "png_source": "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_2_Ch2_Stationary_Combustion.pdf",
+    "png_source_detail": "IPCC 2006 Vol 2 Ch 2 Table 2.5: natural gas 56,100 kg CO2/TJ, net CV, multiplied by 0.0000036 TJ/kWh; delivered PNG composition can differ"
+  },
+  "calculation_trace": {
+    "schema_version": "1.0",
+    "status": "available",
+    "anchor": {
+      "status": "available",
+      "supplied_energy": {
+        "annual_electricity_demand_kwh": 5052.429705264273,
+        "annual_lpg_kwh": 1036.3636363636363,
+        "annual_png_kwh": 0.0,
+        "annual_grid_kwh": 5052.429705264273,
+        "annual_solar_generation_kwh": 0.0,
+        "annual_solar_self_consumed_kwh": 0.0,
+        "annual_solar_export_kwh": 0.0,
+        "annual_gas_kwh": 1036.3636363636363
+      },
+      "normalized_energy": {
+        "annual_grid_kwh": 5052.429705264273,
+        "annual_lpg_kwh": 1036.3636363636363,
+        "annual_png_kwh": 0.0,
+        "annual_gas_kwh": 1036.3636363636363,
+        "annual_electricity_demand_kwh": 5052.429705264273
+      },
+      "baseline_energy": {
+        "annual_grid_kwh": 5052.429705264273,
+        "annual_solar_generation_kwh": 0.0,
+        "annual_solar_self_consumed_kwh": 0.0,
+        "annual_solar_export_kwh": 0.0,
+        "annual_electricity_demand_kwh": 5052.429705264273,
+        "annual_lpg_kwh": 1036.3636363636363,
+        "annual_png_kwh": 0.0,
+        "annual_gas_kwh": 1036.3636363636363
+      },
+      "nominal_end_uses_kwh": {
+        "cooling": 1804.2887095939031,
+        "fans": 483.12,
+        "lighting": 904.02,
+        "water": 612.9409956703704,
+        "cooking": 0.0,
+        "other": 1248.06
+      },
+      "nominal_gross_kwh": 5052.429705264273,
+      "anchored_gross_kwh": 5052.429705264273,
+      "electricity_scale_factor": 1.0,
+      "anchored_end_uses_kwh": {
+        "cooling": 1804.2887095939031,
+        "fans": 483.12,
+        "lighting": 904.02,
+        "water": 612.9409956703704,
+        "cooking": 0.0,
+        "other": 1248.06
+      },
+      "end_use_allocation_measured": false,
+      "assumed_inputs": {
+        "ac_capacity_ton": 1.5,
+        "ac_iseer": 3.2,
+        "setpoint_c": 26.0,
+        "roof_u_value": 3.0,
+        "roof_exposed_fraction": 1.0,
+        "wall_u_value": 2.2,
+        "window_to_wall_ratio": 0.2,
+        "window_shgc": 0.75,
+        "window_shading_fraction": 0.25,
+        "fan_count": 4.0,
+        "fan_power_w": 55.0,
+        "fan_hours_per_day": 6.0,
+        "lighting_hours_per_day": 5.0,
+        "hot_water_litres_per_person_day": 20.0,
+        "appliance_kwh_per_day": 3.41,
+        "solar_self_consumption_fraction": 0.65
+      },
+      "electricity_anchor_rule": "supplied gross demand checked against the PV balance",
+      "pv_assumptions": {
+        "solar_kw": 0.0,
+        "city": "Hyderabad",
+        "yield_kwh_per_kw_year": 1504.6,
+        "self_consumption_fraction": 0.65,
+        "gross_demand_self_use_cap_fraction": 0.75,
+        "export_credit": false,
+        "generation_source": "Cached PVGIS 5.3 ERA5 2005-2023, 20-degree south-facing, 14% user loss",
+        "measured_pv_flows": false
+      },
+      "equations": [
+        "scale = anchored gross electricity / sum(nominal electrical end uses)",
+        "anchored end-use kWh = nominal end-use kWh * scale; these shares are inferred, not metered",
+        "PV generation = installed kW * location yield; self-use = min(generation * self-consumption fraction, 0.75 * gross demand)",
+        "grid imports = gross electricity - self-used PV; exports = generation - self-used PV; exports receive no savings credit",
+        "meter-only gross electricity = min(4 * grid imports, grid imports + generation * self-consumption fraction)",
+        "LPG and PNG retain the supplied fuel totals; their useful cooking heat is not scaled with electricity"
+      ]
+    },
+    "selected_steps": [
+      {
+        "status": "available",
+        "retrofit_id": "insulation",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "insulation": {
+            "before": "poor",
+            "after": "good"
+          },
+          "roof_u_value": {
+            "before": 3.0,
+            "after": 0.6
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 1804.2887095939031,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.5259744081935201,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1804.2887095939031,
+            "ratio": 0.5259744081935201,
+            "after_kwh": 949.0096862389033
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 5052.429705264273,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 5052.429705264273,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 4197.150681909274,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4197.150681909274,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 855.2790233549995,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 855.2790233549995,
+          "percent": 14.046773726209778,
+          "carbon_kg": 612.3797807221796
+        },
+        "savings_percent_denominator_kwh": 6088.793341627909,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 612.3797807221796,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      {
+        "status": "available",
+        "retrofit_id": "glazing",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "glazing": {
+            "before": "single",
+            "after": "double"
+          },
+          "window_shgc": {
+            "before": 0.75,
+            "after": 0.4
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 949.0096862389033,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.7380550634539894,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 949.0096862389033,
+            "ratio": 0.7380550634539894,
+            "after_kwh": 700.4214041955044
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 1.0,
+            "after_kwh": 904.02
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 4197.150681909274,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 4197.150681909274,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3948.562399865875,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3948.562399865875,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 248.58828204339898,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 248.58828204339898,
+          "percent": 4.749930293979487,
+          "carbon_kg": 177.98920994307366
+        },
+        "savings_percent_denominator_kwh": 5233.51431827291,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 177.98920994307366,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      {
+        "status": "available",
+        "retrofit_id": "led_lighting",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "led_fraction": {
+            "before": 0.5,
+            "after": 1.0
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 904.02,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 0.4615384615384616,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 700.4214041955044,
+            "ratio": 1.0,
+            "after_kwh": 700.4214041955044
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 904.02,
+            "ratio": 0.4615384615384616,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3948.562399865875,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3948.562399865875,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3461.7823998658746,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3461.7823998658746,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 486.7800000000002,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 486.7800000000002,
+          "percent": 9.765039570540749,
+          "carbon_kg": 348.53448000000014
+        },
+        "savings_percent_denominator_kwh": 4984.926036229511,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 348.53448000000014,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      {
+        "status": "available",
+        "retrofit_id": "efficient_ac",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "cooling": {
+            "before": "ac_standard",
+            "after": "ac_efficient"
+          },
+          "ac_iseer": {
+            "before": 3.2,
+            "after": 5.2
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 700.4214041955044,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.6153846153846155,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 700.4214041955044,
+            "ratio": 0.6153846153846155,
+            "after_kwh": 431.0285564280028
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3461.7823998658746,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3461.7823998658746,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3192.3895520983733,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3192.3895520983733,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 269.3928477675013,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 269.3928477675013,
+          "percent": 5.988975137706177,
+          "carbon_kg": 192.8852790015309
+        },
+        "savings_percent_denominator_kwh": 4498.146036229511,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 192.8852790015309,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      {
+        "status": "available",
+        "retrofit_id": "smart_controls",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "smart_controls": {
+            "before": false,
+            "after": true
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 431.0285564280028,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 0.9199999999999998,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 431.0285564280028,
+            "ratio": 0.9199999999999998,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 1.0,
+            "after_kwh": 612.9409956703704
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3192.3895520983733,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3192.3895520983733,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3157.907267584133,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3157.907267584133,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 34.48228451424029,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 34.48228451424029,
+          "percent": 0.8154243810758187,
+          "carbon_kg": 24.68931571219605
+        },
+        "savings_percent_denominator_kwh": 4228.753188462009,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 24.68931571219605,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      {
+        "status": "available",
+        "retrofit_id": "solar_water_heater",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "hot_water": {
+            "before": "electric_geyser",
+            "after": "solar_heater"
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 612.9409956703704,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 0.3,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 396.5462719137625,
+            "ratio": 1.0,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 612.9409956703704,
+            "ratio": 0.3,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "zero nominal demand remains zero; 0/0 ratio is undefined",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 0.0
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3157.907267584133,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3157.907267584133,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 2728.8485706148736,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 2728.8485706148736,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "savings": {
+          "electricity_kwh": 429.0586969692595,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 429.0586969692595,
+          "percent": 10.229637207396808,
+          "carbon_kg": 307.20602702998974
+        },
+        "savings_percent_denominator_kwh": 4194.2709039477695,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 307.20602702998974,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      {
+        "status": "available",
+        "retrofit_id": "induction",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "cooking_fuel": {
+            "before": "lpg",
+            "after": "induction"
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 0.0,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": null,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": {
+          "source_lpg_kwh": 1036.3636363636363,
+          "source_png_kwh": 0.0,
+          "lpg_efficiency": 0.55,
+          "png_efficiency": 0.5,
+          "induction_efficiency": 0.84,
+          "useful_cooking_heat_kwh": 570.0,
+          "added_electricity_kwh": 678.5714285714286,
+          "equation": "added electricity = (entered LPG kWh * 0.55 + entered PNG kWh * 0.50) / 0.84"
+        },
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 396.5462719137625,
+            "ratio": 1.0,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 183.88229870111113,
+            "ratio": 1.0,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "before + added electricity from anchored fuel conversion",
+            "before_kwh": 0.0,
+            "ratio": null,
+            "after_kwh": 678.5714285714286
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 2728.8485706148736,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 2728.8485706148736,
+          "annual_lpg_kwh": 1036.3636363636363,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 1036.3636363636363
+        },
+        "after_energy": {
+          "annual_grid_kwh": 3407.419999186302,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3407.419999186302,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "savings": {
+          "electricity_kwh": -678.5714285714284,
+          "lpg_kwh": 1036.3636363636363,
+          "png_kwh": 0.0,
+          "gas_kwh": 1036.3636363636363,
+          "total_kwh": 357.7922077922078,
+          "percent": 9.502577494279592,
+          "carbon_kg": -250.4367792207791
+        },
+        "savings_percent_denominator_kwh": 3765.21220697851,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": -485.8571428571427,
+          "lpg": 235.42036363636362,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      },
+      {
+        "status": "available",
+        "retrofit_id": "solar",
+        "comparison": "selected_package_marginal",
+        "physical_input_changes": {
+          "solar_kw": {
+            "before": 0.0,
+            "after": 3.0
+          }
+        },
+        "before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.88229870111113,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_before_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "nominal_after_end_uses_kwh": {
+          "cooling": 396.5462719137625,
+          "fans": 483.12,
+          "lighting": 417.24000000000007,
+          "water": 183.8822987011111,
+          "cooking": 678.5714285714286,
+          "other": 1248.06
+        },
+        "end_use_ratios": {
+          "cooling": 1.0,
+          "fans": 1.0,
+          "lighting": 1.0,
+          "water": 1.0,
+          "cooking": 1.0,
+          "other": 1.0
+        },
+        "fuel_switch_conversion": null,
+        "end_use_equations": {
+          "cooling": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 396.5462719137625,
+            "ratio": 1.0,
+            "after_kwh": 396.5462719137625
+          },
+          "fans": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 483.12,
+            "ratio": 1.0,
+            "after_kwh": 483.12
+          },
+          "lighting": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 417.24000000000007,
+            "ratio": 1.0,
+            "after_kwh": 417.24000000000007
+          },
+          "water": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 183.88229870111113,
+            "ratio": 1.0,
+            "after_kwh": 183.88229870111113
+          },
+          "cooking": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 678.5714285714286,
+            "ratio": 1.0,
+            "after_kwh": 678.5714285714286
+          },
+          "other": {
+            "rule": "before * nominal after / nominal before",
+            "before_kwh": 1248.06,
+            "ratio": 1.0,
+            "after_kwh": 1248.06
+          }
+        },
+        "before_energy": {
+          "annual_grid_kwh": 3407.419999186302,
+          "annual_solar_generation_kwh": 0.0,
+          "annual_solar_self_consumed_kwh": 0.0,
+          "annual_solar_export_kwh": 0.0,
+          "annual_electricity_demand_kwh": 3407.419999186302,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "after_energy": {
+          "annual_grid_kwh": 851.8549997965756,
+          "annual_solar_generation_kwh": 4513.799999999999,
+          "annual_solar_self_consumed_kwh": 2555.5649993897264,
+          "annual_solar_export_kwh": 1958.235000610273,
+          "annual_electricity_demand_kwh": 3407.419999186302,
+          "annual_lpg_kwh": 0.0,
+          "annual_png_kwh": 0.0,
+          "annual_gas_kwh": 0.0
+        },
+        "savings": {
+          "electricity_kwh": 2555.5649993897264,
+          "lpg_kwh": 0.0,
+          "png_kwh": 0.0,
+          "gas_kwh": 0.0,
+          "total_kwh": 2555.5649993897264,
+          "percent": 75.0,
+          "carbon_kg": 1829.784539563044
+        },
+        "savings_percent_denominator_kwh": 3407.419999186302,
+        "carbon_factor_values": {
+          "electricity": 0.716,
+          "lpg": 0.22716,
+          "png": 0.20196
+        },
+        "carbon_terms_kg": {
+          "electricity": 1829.784539563044,
+          "lpg": 0.0,
+          "png": 0.0
+        },
+        "carbon_status": "available",
+        "equations": [
+          "changed electrical end-use = previous anchored end-use * new nominal physics / previous nominal physics; zero-to-zero ratios are undefined",
+          "fuel switching uses the separately anchored LPG/PNG useful cooking heat; it is not multiplied by the electricity scale",
+          "recompute gross demand and the full PV balance after this step",
+          "signed fuel saving = before - after; electricity saving may be negative",
+          "signed CO2 saving = electricity saved * grid factor + LPG saved * LPG factor + PNG saved * PNG factor",
+          "percent saving = 100 * total purchased-energy saving / this comparison's before purchased energy; undefined when the denominator is zero",
+          "standalone comparisons start from the original baseline; package marginal comparisons start from the preceding package state"
+        ]
+      }
+    ]
+  },
+  "recommended_package": {
+    "after": {
+      "annual_grid_kwh": 851.8549997965756,
+      "annual_solar_generation_kwh": 4513.799999999999,
+      "annual_solar_self_consumed_kwh": 2555.5649993897264,
+      "annual_solar_export_kwh": 1958.235000610273,
+      "annual_electricity_demand_kwh": 3407.419999186302,
+      "annual_lpg_kwh": 0.0,
+      "annual_png_kwh": 0.0,
+      "annual_gas_kwh": 0.0
+    },
+    "savings": {
+      "electricity_kwh": 4200.574705467698,
+      "lpg_kwh": 1036.3636363636363,
+      "png_kwh": 0.0,
+      "gas_kwh": 1036.3636363636363,
+      "total_kwh": 5236.938341831334,
+      "percent": 86.00946111978203,
+      "carbon_kg": 3243.031852751235
+    },
+    "applied": [
+      "insulation",
+      "glazing",
+      "led_lighting",
+      "efficient_ac",
+      "smart_controls",
+      "solar_water_heater",
+      "induction",
+      "solar"
+    ]
+  },
+  "value_impact": {
+    "available": false,
+    "reason": "Unavailable: no local transaction dataset or validated value model; no uplift invented from score changes"
+  }
+}

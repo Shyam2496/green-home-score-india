@@ -1,0 +1,21 @@
+{
+  "interpretation": "Directional prediction consistency, not causal savings.",
+  "checks": {
+    "led_fraction": {
+      "n": 400,
+      "unexpected_demand_increases": 0,
+      "mean_demand_change_kwh": -160.95349136159993
+    },
+    "ac_iseer": {
+      "n": 400,
+      "unexpected_demand_increases": 0,
+      "mean_demand_change_kwh": -45.31352588524793
+    },
+    "window_shading_fraction": {
+      "n": 400,
+      "unexpected_demand_increases": 0,
+      "mean_demand_change_kwh": -15.762162024949543
+    }
+  },
+  "solar_invariance": "solar_kw excluded from model FEATURES: installed PV changes imports, not predicted dwelling demand."
+}

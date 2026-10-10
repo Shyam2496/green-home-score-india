@@ -1,0 +1,917 @@
+{
+  "version": "2.0",
+  "data_origin": "synthetic_india_physics_v2",
+  "provenance": {
+    "data_kind": "synthetic",
+    "source": "greenhome.ml.generate_dataset + greenhome.physics",
+    "license": "Generated synthetic data; no separate owner licence declared",
+    "units": "kWh/year",
+    "geographic_scope": "Hyderabad-first synthetic Indian homes",
+    "label_rule_version": "synthetic_india_physics_v2",
+    "measured_household_count": 0
+  },
+  "seed": 42,
+  "n_rows": 12000,
+  "dataset_sha256": "1473ba5ac115b7807bfd6bfddeddcc458489ac74bdfd37e517f2a5a3183845b9",
+  "features": [
+    "area_m2",
+    "occupants",
+    "ac_units",
+    "ac_hours_per_day",
+    "led_fraction",
+    "ac_capacity_ton",
+    "ac_iseer",
+    "setpoint_c",
+    "roof_u_value",
+    "roof_exposed_fraction",
+    "wall_u_value",
+    "window_to_wall_ratio",
+    "window_shgc",
+    "window_shading_fraction",
+    "fan_count",
+    "fan_power_w",
+    "fan_hours_per_day",
+    "lighting_hours_per_day",
+    "hot_water_litres_per_person_day",
+    "appliance_kwh_per_day",
+    "insulation",
+    "cooling",
+    "glazing",
+    "property_type",
+    "city",
+    "smart_controls",
+    "hot_water",
+    "cooking_fuel"
+  ],
+  "engineered_features": [
+    "climate_cooling_degree_hours",
+    "climate_annual_ghi_kwh_m2",
+    "climate_pv_yield_kwh_per_kw_year",
+    "physics_annual_electricity_demand_kwh",
+    "physics_annual_lpg_kwh",
+    "physics_annual_png_kwh"
+  ],
+  "targets": [
+    "annual_electricity_demand_kwh",
+    "annual_lpg_kwh",
+    "annual_png_kwh"
+  ],
+  "split_counts": {
+    "train": 6000,
+    "validation": 1800,
+    "calibration": 1800,
+    "test": 2400
+  },
+  "split_group_counts": {
+    "train": 1500,
+    "validation": 450,
+    "calibration": 450,
+    "test": 600
+  },
+  "split_method": "GroupShuffleSplit approximately 50/15/15/20 train/validation/calibration/test by group; seed, seed+1, seed+2.",
+  "frozen_test_reused": false,
+  "selection_rule": "Lowest validation MAE among physics, training mean with known fuel-absence gate, RF, ExtraTrees, HistGB, residual HistGB. Unconditional mean is an additional comparator. Calibration/test do not select candidates.",
+  "supported_input_ranges": {
+    "area_m2": [
+      35,
+      250
+    ],
+    "occupants": [
+      1,
+      8
+    ],
+    "solar_kw": [
+      0,
+      8
+    ],
+    "ac_units": [
+      0,
+      5
+    ],
+    "ac_hours_per_day": [
+      0,
+      16
+    ],
+    "led_fraction": [
+      0,
+      1
+    ],
+    "ac_capacity_ton": [
+      0.75,
+      2.5
+    ],
+    "ac_iseer": [
+      2.5,
+      6.5
+    ],
+    "setpoint_c": [
+      22,
+      30
+    ],
+    "roof_u_value": [
+      0.2,
+      4
+    ],
+    "roof_exposed_fraction": [
+      0,
+      1
+    ],
+    "wall_u_value": [
+      0.3,
+      3.5
+    ],
+    "window_to_wall_ratio": [
+      0.1,
+      0.5
+    ],
+    "window_shgc": [
+      0.2,
+      0.9
+    ],
+    "window_shading_fraction": [
+      0,
+      0.9
+    ],
+    "fan_count": [
+      0,
+      10
+    ],
+    "fan_power_w": [
+      20,
+      90
+    ],
+    "fan_hours_per_day": [
+      0,
+      24
+    ],
+    "lighting_hours_per_day": [
+      1,
+      12
+    ],
+    "hot_water_litres_per_person_day": [
+      0,
+      50
+    ],
+    "appliance_kwh_per_day": [
+      0.5,
+      12
+    ],
+    "solar_self_consumption_fraction": [
+      0,
+      1
+    ]
+  },
+  "supported_categories": {
+    "insulation": [
+      "poor",
+      "average",
+      "good"
+    ],
+    "cooling": [
+      "fans_only",
+      "ac_standard",
+      "ac_efficient"
+    ],
+    "glazing": [
+      "single",
+      "double"
+    ],
+    "property_type": [
+      "independent",
+      "row_house",
+      "apartment"
+    ],
+    "city": [
+      "Hyderabad",
+      "Delhi",
+      "Mumbai",
+      "Bengaluru",
+      "Chennai",
+      "Kolkata",
+      "Jaipur",
+      "Pune"
+    ],
+    "smart_controls": [
+      false,
+      true
+    ],
+    "hot_water": [
+      "electric_geyser",
+      "solar_heater",
+      "heat_pump",
+      "none"
+    ],
+    "cooking_fuel": [
+      "lpg",
+      "png",
+      "induction"
+    ]
+  },
+  "interval_level": 0.9,
+  "interval_method": "Relative split conformal |y-pred|/max(pred,100), finite-sample90%quantile; one label-independent random representative per calibration group; absent fuels[0,0].",
+  "interval_limits": "Marginal exchangeability of independent group representatives required; row/subgroup/drift coverage not guaranteed.",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scikit_learn": "1.9.1",
+    "joblib": "1.6.0"
+  },
+  "code_sha256": {
+    "ml.py": "faedb4c6f0133b92c36abeb69240b68960954c89b0435acb54e61a6b5309c954",
+    "physics.py": "5f1f6c381a3392bcbd9badb18d5fc128384b840db0fe875cd2f07f98552169e7",
+    "schema.py": "c88fef7a96f3b3e8a83e3fae46dc00a73159f38d6490b031e9d2d7a9d36171eb"
+  },
+  "target_units": {
+    "annual_electricity_demand_kwh": "dwelling electricity demand before solar,kWh/year",
+    "annual_lpg_kwh": "LPG input energy,kWh/year",
+    "annual_png_kwh": "PNG input energy,kWh/year"
+  },
+  "models": {
+    "annual_electricity_demand_kwh": {
+      "selected": "physics_baseline",
+      "best_learned": "residual_hist_gradient_boosting",
+      "candidates": {
+        "mean_baseline": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 1099.0491528722223,
+            "rmse_kwh": 1429.6965625097619,
+            "r2": -0.004996704167566701,
+            "wape": 0.2866706719409141
+          },
+          "test": {
+            "n": 2400,
+            "mae_kwh": 1157.8455695680557,
+            "rmse_kwh": 1503.3535085222086,
+            "r2": -0.006657212583587757,
+            "wape": 0.28540129204356884
+          }
+        },
+        "physics_baseline": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 397.6449546809586,
+            "rmse_kwh": 522.327716504827,
+            "r2": 0.8658585381903945,
+            "wape": 0.10371978910533572
+          },
+          "test": {
+            "n": 2400,
+            "mae_kwh": 407.97879150015245,
+            "rmse_kwh": 540.6384943022446,
+            "r2": 0.8698112945953237,
+            "wape": 0.10056407977097963
+          }
+        },
+        "random_forest": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 408.4686886622366,
+            "rmse_kwh": 544.3143519484202,
+            "r2": 0.8543278726439713,
+            "wape": 0.10654299959161267
+          }
+        },
+        "extra_trees": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 408.7976556132099,
+            "rmse_kwh": 542.9276836312445,
+            "r2": 0.8550691414411111,
+            "wape": 0.10662880574198857
+          }
+        },
+        "hist_gradient_boosting": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 406.85815414825294,
+            "rmse_kwh": 558.9082151224515,
+            "r2": 0.8464117903803093,
+            "wape": 0.1061229155488734
+          }
+        },
+        "residual_hist_gradient_boosting": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 402.12607080062304,
+            "rmse_kwh": 529.0383533832903,
+            "r2": 0.8623896157650695,
+            "wape": 0.10488862178739757
+          }
+        },
+        "unconditional_mean_comparator": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 1099.0491528722223,
+            "rmse_kwh": 1429.6965625097619,
+            "r2": -0.004996704167566701,
+            "wape": 0.2866706719409141
+          },
+          "test": {
+            "n": 2400,
+            "mae_kwh": 1157.8455695680557,
+            "rmse_kwh": 1503.3535085222086,
+            "r2": -0.006657212583587757,
+            "wape": 0.28540129204356884
+          }
+        }
+      },
+      "validation": {
+        "n": 1800,
+        "mae_kwh": 397.6449546809586,
+        "rmse_kwh": 522.327716504827,
+        "r2": 0.8658585381903945,
+        "wape": 0.10371978910533572
+      },
+      "test": {
+        "n": 2400,
+        "mae_kwh": 407.97879150015245,
+        "rmse_kwh": 540.6384943022446,
+        "r2": 0.8698112945953237,
+        "wape": 0.10056407977097963
+      },
+      "calibration": {
+        "relative_radius": 0.20468163304309492,
+        "calibration_n": 450,
+        "quantile_level": 0.9022222222222223,
+        "order_statistic_rank": 406
+      },
+      "test_intervals": {
+        "nominal_coverage": 0.9,
+        "row_coverage": 0.8870833333333333,
+        "group_weighted_coverage": 0.8870833333333333,
+        "mean_width_kwh": 1667.4936685811203,
+        "active_n": 2400,
+        "active_coverage": 0.8870833333333333,
+        "active_mean_width_kwh": 1667.4936685811203
+      },
+      "active_fuel_test": {
+        "n": 2400,
+        "mae_kwh": 407.97879150015245,
+        "rmse_kwh": 540.6384943022446,
+        "r2": 0.8698112945953237,
+        "wape": 0.10056407977097963
+      }
+    },
+    "annual_lpg_kwh": {
+      "selected": "physics_baseline",
+      "best_learned": "residual_hist_gradient_boosting",
+      "candidates": {
+        "mean_baseline": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 398.9815503083333,
+            "rmse_kwh": 610.7421408529787,
+            "r2": 0.3931257963034577,
+            "wape": 0.42131844025312093
+          },
+          "test": {
+            "n": 2400,
+            "mae_kwh": 395.7098601375,
+            "rmse_kwh": 605.8868418950578,
+            "r2": 0.3841798076021823,
+            "wape": 0.4016144085592856
+          }
+        },
+        "physics_baseline": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 107.8893515151515,
+            "rmse_kwh": 172.90794673536192,
+            "r2": 0.9513578446474366,
+            "wape": 0.11392951194148214
+          },
+          "test": {
+            "n": 2400,
+            "mae_kwh": 110.24257651515153,
+            "rmse_kwh": 177.96453388628962,
+            "r2": 0.9468702458825105,
+            "wape": 0.1118875510198301
+          }
+        },
+        "random_forest": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 111.61782250069678,
+            "rmse_kwh": 178.8815530758475,
+            "r2": 0.9479388188709283,
+            "wape": 0.11786672051402135
+          }
+        },
+        "extra_trees": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 112.46204907841877,
+            "rmse_kwh": 180.4401700300958,
+            "r2": 0.9470276355259176,
+            "wape": 0.1187582109217136
+          }
+        },
+        "hist_gradient_boosting": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 111.1534280196045,
+            "rmse_kwh": 177.9407769213823,
+            "r2": 0.9484849805549411,
+            "wape": 0.1173763270151622
+          }
+        },
+        "residual_hist_gradient_boosting": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 109.79054509049463,
+            "rmse_kwh": 176.512306430281,
+            "r2": 0.9493087637630047,
+            "wape": 0.11593714340003906
+          }
+        },
+        "unconditional_mean_comparator": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 652.5749397833332,
+            "rmse_kwh": 784.0092201346697,
+            "r2": -5.812687094342017e-05,
+            "wape": 0.6891091970676663
+          },
+          "test": {
+            "n": 2400,
+            "mae_kwh": 637.1265315375,
+            "rmse_kwh": 772.7609125279284,
+            "r2": -0.0017542103235645978,
+            "wape": 0.6466333567021806
+          }
+        }
+      },
+      "validation": {
+        "n": 1800,
+        "mae_kwh": 107.8893515151515,
+        "rmse_kwh": 172.90794673536192,
+        "r2": 0.9513578446474366,
+        "wape": 0.11392951194148214
+      },
+      "test": {
+        "n": 2400,
+        "mae_kwh": 110.24257651515153,
+        "rmse_kwh": 177.96453388628962,
+        "r2": 0.9468702458825105,
+        "wape": 0.1118875510198301
+      },
+      "calibration": {
+        "relative_radius": 0.2540118421052632,
+        "calibration_n": 331,
+        "quantile_level": 0.9033232628398792,
+        "order_statistic_rank": 299
+      },
+      "test_intervals": {
+        "nominal_coverage": 0.9,
+        "row_coverage": 0.94625,
+        "group_weighted_coverage": 0.94625,
+        "mean_width_kwh": 498.12491969696976,
+        "active_n": 1792,
+        "active_coverage": 0.9280133928571429,
+        "active_mean_width_kwh": 667.13158887987
+      },
+      "active_fuel_test": {
+        "n": 1792,
+        "mae_kwh": 147.64630783279222,
+        "rmse_kwh": 205.95392814822534,
+        "r2": 0.8812610097141078,
+        "wape": 0.1118875510198301
+      }
+    },
+    "annual_png_kwh": {
+      "selected": "physics_baseline",
+      "best_learned": "residual_hist_gradient_boosting",
+      "candidates": {
+        "mean_baseline": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 150.69438224444443,
+            "rmse_kwh": 498.03108828142473,
+            "r2": 0.09503032323948746,
+            "wape": 0.8810812596001354
+          },
+          "test": {
+            "n": 2400,
+            "mae_kwh": 132.1737815888889,
+            "rmse_kwh": 462.54500751748424,
+            "r2": 0.10811384869706764,
+            "wape": 0.8781867356185169
+          }
+        },
+        "physics_baseline": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 18.575,
+            "rmse_kwh": 72.96488140270709,
+            "r2": 0.9805755432068597,
+            "wape": 0.10860447584917104
+          },
+          "test": {
+            "n": 2400,
+            "mae_kwh": 16.246129166666666,
+            "rmse_kwh": 70.13679886271068,
+            "r2": 0.9794934167516002,
+            "wape": 0.1079422482114345
+          }
+        },
+        "random_forest": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 19.273922254025813,
+            "rmse_kwh": 77.23695092930375,
+            "r2": 0.978234363971601,
+            "wape": 0.11269094072442243
+          }
+        },
+        "extra_trees": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 21.08132574885955,
+            "rmse_kwh": 84.9760196153534,
+            "r2": 0.9736540484152407,
+            "wape": 0.12325848361564061
+          }
+        },
+        "hist_gradient_boosting": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 19.897012249816804,
+            "rmse_kwh": 79.95466276032789,
+            "r2": 0.9766756949710126,
+            "wape": 0.11633402887514882
+          }
+        },
+        "residual_hist_gradient_boosting": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 18.64033724944661,
+            "rmse_kwh": 74.8304923302717,
+            "r2": 0.9795695314927746,
+            "wape": 0.10898649026260715
+          }
+        },
+        "unconditional_mean_comparator": {
+          "validation": {
+            "n": 1800,
+            "mae_kwh": 302.23488448888895,
+            "rmse_kwh": 523.5281117416852,
+            "r2": -2.612071388963244e-06,
+            "wape": 1.7671096211709578
+          },
+          "test": {
+            "n": 2400,
+            "mae_kwh": 285.71954567777783,
+            "rmse_kwh": 490.2440886388792,
+            "r2": -0.001904105663492306,
+            "wape": 1.8983728248134384
+          }
+        }
+      },
+      "validation": {
+        "n": 1800,
+        "mae_kwh": 18.575,
+        "rmse_kwh": 72.96488140270709,
+        "r2": 0.9805755432068597,
+        "wape": 0.10860447584917104
+      },
+      "test": {
+        "n": 2400,
+        "mae_kwh": 16.246129166666666,
+        "rmse_kwh": 70.13679886271068,
+        "r2": 0.9794934167516002,
+        "wape": 0.1079422482114345
+      },
+      "calibration": {
+        "relative_radius": 0.2396677631578948,
+        "calibration_n": 62,
+        "quantile_level": 0.9193548387096774,
+        "order_statistic_rank": 57
+      },
+      "test_intervals": {
+        "nominal_coverage": 0.9,
+        "row_coverage": 0.9875,
+        "group_weighted_coverage": 0.9875,
+        "mean_width_kwh": 71.720578125,
+        "active_n": 256,
+        "active_coverage": 0.8828125,
+        "active_mean_width_kwh": 672.3804199218752
+      },
+      "active_fuel_test": {
+        "n": 256,
+        "mae_kwh": 152.3074609375,
+        "rmse_kwh": 214.74921175732084,
+        "r2": 0.9019450561444012,
+        "wape": 0.1079422482114345
+      }
+    }
+  },
+  "limitations": [
+    "Bundled household labels are synthetic; no nationwide accuracy or causal retrofit claim follows.",
+    "Physics is also the generator conditional mean; its expected advantage does not establish real superiority.",
+    "Real CSV features must be observed, with declared provenance; source metadata requires independent audit.",
+    "No property-sale labels/value uplift are invented; aggregate gas is a compatibility LPG+PNG energy sum."
+  ],
+  "candidate_settings": {
+    "mean_baseline": {
+      "constant": null,
+      "quantile": null,
+      "strategy": "mean"
+    },
+    "physics_baseline": {
+      "target": "annual_electricity_demand_kwh"
+    },
+    "random_forest": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "criterion": "squared_error",
+      "max_depth": 16,
+      "max_features": 1.0,
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 4,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 96,
+      "n_jobs": 4,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "extra_trees": {
+      "bootstrap": false,
+      "ccp_alpha": 0.0,
+      "criterion": "squared_error",
+      "max_depth": 18,
+      "max_features": 1.0,
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 3,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 96,
+      "n_jobs": 4,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "hist_gradient_boosting": {
+      "categorical_features": "from_dtype",
+      "early_stopping": "auto",
+      "interaction_cst": null,
+      "l2_regularization": 2.0,
+      "learning_rate": 0.06,
+      "loss": "squared_error",
+      "max_bins": 255,
+      "max_depth": null,
+      "max_features": 1.0,
+      "max_iter": 160,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 30,
+      "monotonic_cst": null,
+      "n_iter_no_change": 10,
+      "quantile": null,
+      "random_state": 42,
+      "scoring": "loss",
+      "tol": 1e-07,
+      "validation_fraction": 0.1,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "residual_hist_gradient_boosting": {
+      "baseline_column": 23,
+      "random_state": 42
+    }
+  },
+  "stress_tests": {
+    "interpretation": "Sensitivity and drift diagnostics only. Counterfactual truth is assumed physics, not measured climate or retrofit outcomes.",
+    "cases": {
+      "high_ac_hours_and_low_setpoint": {
+        "annual_electricity_demand_kwh": {
+          "n": 400,
+          "mae_kwh": 0.0,
+          "rmse_kwh": 0.0,
+          "r2": 1.0,
+          "wape": 0.0
+        },
+        "annual_lpg_kwh": {
+          "n": 400,
+          "mae_kwh": 0.0,
+          "rmse_kwh": 0.0,
+          "r2": 1.0,
+          "wape": 0.0
+        },
+        "annual_png_kwh": {
+          "n": 400,
+          "mae_kwh": 0.0,
+          "rmse_kwh": 0.0,
+          "r2": 1.0,
+          "wape": 0.0
+        }
+      },
+      "weaker_envelope": {
+        "annual_electricity_demand_kwh": {
+          "n": 400,
+          "mae_kwh": 0.0,
+          "rmse_kwh": 0.0,
+          "r2": 1.0,
+          "wape": 0.0
+        },
+        "annual_lpg_kwh": {
+          "n": 400,
+          "mae_kwh": 0.0,
+          "rmse_kwh": 0.0,
+          "r2": 1.0,
+          "wape": 0.0
+        },
+        "annual_png_kwh": {
+          "n": 400,
+          "mae_kwh": 0.0,
+          "rmse_kwh": 0.0,
+          "r2": 1.0,
+          "wape": 0.0
+        }
+      },
+      "unobserved_35_percent_usage_shift": {
+        "annual_electricity_demand_kwh": {
+          "n": 400,
+          "mae_kwh": 1383.5855202476428,
+          "rmse_kwh": 1622.1006900098855,
+          "r2": 0.33547700092376764,
+          "wape": 0.2615948205894907,
+          "active_coverage_under_unobserved_35_percent_shift": 0.19
+        },
+        "annual_lpg_kwh": {
+          "n": 400,
+          "mae_kwh": 367.6603023863638,
+          "rmse_kwh": 523.7199895096846,
+          "r2": 0.7506992147047453,
+          "wape": 0.2787565537849135,
+          "active_coverage_under_unobserved_35_percent_shift": 0.29152542372881357
+        },
+        "annual_png_kwh": {
+          "n": 400,
+          "mae_kwh": 60.64233750000001,
+          "rmse_kwh": 225.59710001952044,
+          "r2": 0.9034851866971615,
+          "wape": 0.2487789573605652,
+          "active_coverage_under_unobserved_35_percent_shift": 0.4528301886792453
+        }
+      }
+    },
+    "ood_rejection_examples": {
+      "area_m2_300": "Rejected by supported input bounds.",
+      "unknown_city": "Rejected until weather/schema are documented."
+    }
+  },
+  "monotonicity": {
+    "interpretation": "Directional prediction consistency, not causal savings.",
+    "checks": {
+      "led_fraction": {
+        "n": 400,
+        "unexpected_demand_increases": 0,
+        "mean_demand_change_kwh": -160.95349136159993
+      },
+      "ac_iseer": {
+        "n": 400,
+        "unexpected_demand_increases": 0,
+        "mean_demand_change_kwh": -45.31352588524793
+      },
+      "window_shading_fraction": {
+        "n": 400,
+        "unexpected_demand_increases": 0,
+        "mean_demand_change_kwh": -15.762162024949543
+      }
+    },
+    "solar_invariance": "solar_kw excluded from model FEATURES: installed PV changes imports, not predicted dwelling demand."
+  },
+  "training_feature_distribution": {
+    "area_m2": {
+      "min": 35.0,
+      "p01": 42.6,
+      "p99": 200.60400000000007,
+      "max": 250.0
+    },
+    "occupants": {
+      "min": 1.0,
+      "p01": 1.0,
+      "p99": 8.0,
+      "max": 8.0
+    },
+    "ac_units": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p99": 4.0,
+      "max": 5.0
+    },
+    "ac_hours_per_day": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p99": 15.9,
+      "max": 16.0
+    },
+    "led_fraction": {
+      "min": 0.02,
+      "p01": 0.11,
+      "p99": 0.98,
+      "max": 1.0
+    },
+    "ac_capacity_ton": {
+      "min": 0.75,
+      "p01": 0.75,
+      "p99": 1.96,
+      "max": 2.24
+    },
+    "ac_iseer": {
+      "min": 2.5,
+      "p01": 2.51,
+      "p99": 5.77,
+      "max": 6.47
+    },
+    "setpoint_c": {
+      "min": 22.0,
+      "p01": 22.3,
+      "p99": 28.7,
+      "max": 30.0
+    },
+    "roof_u_value": {
+      "min": 0.2,
+      "p01": 0.28,
+      "p99": 3.120100000000002,
+      "max": 3.51
+    },
+    "roof_exposed_fraction": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p99": 1.0,
+      "max": 1.0
+    },
+    "wall_u_value": {
+      "min": 0.33,
+      "p01": 0.54,
+      "p99": 2.35,
+      "max": 2.58
+    },
+    "window_to_wall_ratio": {
+      "min": 0.1,
+      "p01": 0.1,
+      "p99": 0.36,
+      "max": 0.42
+    },
+    "window_shgc": {
+      "min": 0.25,
+      "p01": 0.34,
+      "p99": 0.86,
+      "max": 0.9
+    },
+    "window_shading_fraction": {
+      "min": 0.01,
+      "p01": 0.04,
+      "p99": 0.78,
+      "max": 0.87
+    },
+    "fan_count": {
+      "min": 1.0,
+      "p01": 1.0,
+      "p99": 7.0,
+      "max": 9.0
+    },
+    "fan_power_w": {
+      "min": 20.0,
+      "p01": 21.8,
+      "p99": 76.9,
+      "max": 81.2
+    },
+    "fan_hours_per_day": {
+      "min": 0.2,
+      "p01": 5.1,
+      "p99": 16.5,
+      "max": 19.5
+    },
+    "lighting_hours_per_day": {
+      "min": 1.0,
+      "p01": 2.2,
+      "p99": 6.9,
+      "max": 8.3
+    },
+    "hot_water_litres_per_person_day": {
+      "min": 0.0,
+      "p01": 0.0,
+      "p99": 24.201000000000022,
+      "max": 30.2
+    },
+    "appliance_kwh_per_day": {
+      "min": 1.4,
+      "p01": 2.06,
+      "p99": 8.490100000000002,
+      "max": 11.42
+    }
+  }
+}

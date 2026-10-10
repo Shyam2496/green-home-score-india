@@ -1,0 +1,2 @@
+# Preserve the reviewed release bytes, including model and data checksums.
+* -text

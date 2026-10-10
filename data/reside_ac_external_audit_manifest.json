@@ -1,0 +1,42 @@
+{
+  "source_doi": "https://doi.org/10.6084/m9.figshare.16869439.v3",
+  "paper_doi": "https://doi.org/10.1186/s42162-022-00225-4",
+  "authors": "Dharani Tejaswini, Pavan Ramapragada, Sraavani Gundepudi, Prabhakar Rao Kandukuri, Vishal Garg, Jyotirmay Mathur, Rajat Gupta",
+  "dataset_license": "CC0 1.0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "paper_license": "CC BY 4.0",
+  "retrieved_date": "2026-10-10",
+  "archive_file_id": 38686209,
+  "archive_md5": "dc02fa4f80433d9b26ad002a90aee5ae",
+  "archive_sha256": "ae841ec127b84063078c1f6cf9e980583338c2eb3351cc8f0a1a13b4edbf56d6",
+  "n_homes": 11,
+  "annual_label_summary_kwh": {
+    "count": 11.0,
+    "mean": 2573.2727272727275,
+    "std": 597.6453950143164,
+    "min": 1654.0,
+    "25%": 2054.0,
+    "50%": 2781.0,
+    "75%": 3022.0,
+    "max": 3349.0
+  },
+  "observed_model_fields": [
+    "city",
+    "area_m2",
+    "occupants",
+    "property_type",
+    "ac_units"
+  ],
+  "no_training": true,
+  "limitations": [
+    "Eleven selected AC-using Hyderabad dwellings cannot establish nationwide or prospective accuracy.",
+    "Annual electricity bill period and year are not specified in the survey file.",
+    "Figshare description says May 2021; the downloaded monitoring timestamps say May 2019. The conflict is preserved.",
+    "AC metadata and monitored AC status describe the primary AC, not necessarily every AC unit in a home.",
+    "Summer primary-AC runtime is not a measured annual-use feature; do not silently map it to annual usage.",
+    "Solar generation/exports and LPG/PNG are not labeled; electricity bill labels are not asserted gross demand.",
+    "Missing model features must remain marked as assumed in any scenario-based external sanity check.",
+    "Property type tenemant is mapped to an apartment proxy; original source spelling is retained.",
+    "No household identifiers are joined to addresses or private data. Income fields are not copied."
+  ]
+}

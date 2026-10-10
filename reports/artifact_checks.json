@@ -1,0 +1,106 @@
+{
+  "dataset_hash_matches": true,
+  "recorded_source_hashes_match": true,
+  "external_audit_matches_frozen_bundle": true,
+  "v2_experiment_bytes_unchanged": true,
+  "frozen_files_compared": 15,
+  "bill_anchored_example_reconciles": true,
+  "recommendation_examples_reconcile": true,
+  "financial_cashflows_reconcile": true,
+  "unknown_cost_withholds_investment_outputs": true,
+  "property_value_impact_deferred": true,
+  "empirical_resale_prediction_unavailable": true,
+  "test_result": "327 passed in 35.09s",
+  "test_result_scope": "Full suite on the current application, including property-value deferral and dashboard flows.",
+  "scope_update_test_result": "10 passed in 18.67s",
+  "n_rows": 12000,
+  "splits": {
+    "train": 6000,
+    "validation": 1800,
+    "calibration": 1800,
+    "test": 2400
+  },
+  "selected_models": {
+    "annual_electricity_demand_kwh": "physics_baseline",
+    "annual_lpg_kwh": "physics_baseline",
+    "annual_png_kwh": "physics_baseline"
+  },
+  "synthetic_test": {
+    "annual_electricity_demand_kwh": {
+      "overall": {
+        "n": 2400,
+        "mae_kwh": 407.97879150015245,
+        "rmse_kwh": 540.6384943022446,
+        "r2": 0.8698112945953237,
+        "wape": 0.10056407977097963
+      },
+      "active_fuel": {
+        "n": 2400,
+        "mae_kwh": 407.97879150015245,
+        "rmse_kwh": 540.6384943022446,
+        "r2": 0.8698112945953237,
+        "wape": 0.10056407977097963
+      },
+      "intervals": {
+        "nominal_coverage": 0.9,
+        "row_coverage": 0.8870833333333333,
+        "group_weighted_coverage": 0.8870833333333333,
+        "mean_width_kwh": 1667.4936685811203,
+        "active_n": 2400,
+        "active_coverage": 0.8870833333333333,
+        "active_mean_width_kwh": 1667.4936685811203
+      }
+    },
+    "annual_lpg_kwh": {
+      "overall": {
+        "n": 2400,
+        "mae_kwh": 110.24257651515153,
+        "rmse_kwh": 177.96453388628962,
+        "r2": 0.9468702458825105,
+        "wape": 0.1118875510198301
+      },
+      "active_fuel": {
+        "n": 1792,
+        "mae_kwh": 147.64630783279222,
+        "rmse_kwh": 205.95392814822534,
+        "r2": 0.8812610097141078,
+        "wape": 0.1118875510198301
+      },
+      "intervals": {
+        "nominal_coverage": 0.9,
+        "row_coverage": 0.94625,
+        "group_weighted_coverage": 0.94625,
+        "mean_width_kwh": 498.12491969696976,
+        "active_n": 1792,
+        "active_coverage": 0.9280133928571429,
+        "active_mean_width_kwh": 667.13158887987
+      }
+    },
+    "annual_png_kwh": {
+      "overall": {
+        "n": 2400,
+        "mae_kwh": 16.246129166666666,
+        "rmse_kwh": 70.13679886271068,
+        "r2": 0.9794934167516002,
+        "wape": 0.1079422482114345
+      },
+      "active_fuel": {
+        "n": 256,
+        "mae_kwh": 152.3074609375,
+        "rmse_kwh": 214.74921175732084,
+        "r2": 0.9019450561444012,
+        "wape": 0.1079422482114345
+      },
+      "intervals": {
+        "nominal_coverage": 0.9,
+        "row_coverage": 0.9875,
+        "group_weighted_coverage": 0.9875,
+        "mean_width_kwh": 71.720578125,
+        "active_n": 256,
+        "active_coverage": 0.8828125,
+        "active_mean_width_kwh": 672.3804199218752
+      }
+    }
+  },
+  "external_mae_kwh": 2349.9296496693464
+}
